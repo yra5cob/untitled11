@@ -1,0 +1,117 @@
+.audiojs .scrubber {
+    background: none repeat scroll 0 0 #5A5A5A;
+    border-bottom: 0 none;
+    border-left: 0 none;
+    border-top: 1px solid #3F3F3F;
+    float: left;
+    height: 14px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 65%;
+}
+
+.audiojs .time {
+    border-left: 1px solid #000000;
+    color: #DDDDDD;
+    float: right;
+    height: 36px;
+    line-height: 36px;
+    margin: 0; /* no margin */
+    padding: 0 6px 0 9px; /* 2px smaller left padding */
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+    width: auto;
+}
+
+.audiojs .play {
+    background: url(/static/audiojs/player-graphics.gif) -9px -1px no-repeat;
+}
+
+.audiojs {
+    font-family: monospace;
+    font-size: 10px; /* reduced font size */
+    width: 100%;
+}
+
+h1 {
+    color: #444;
+    font-size: 1.2em;
+    padding: 14px 2px 12px;
+    margin: 0px;
+}
+
+h1 em {
+    font-style: normal;
+    color: #999;
+}
+
+a {
+    color: #888;
+    text-decoration: none;
+}
+
+#wrapper {
+    width: 400px;
+    margin: 40px auto;
+}
+
+ol {
+    padding: 0px;
+    margin: 10px;
+    list-style: decimal-leading-zero inside;
+    color: #ccc;
+    width: auto;
+    border-top: 1px solid #ccc;
+    font-size: 0.9em;
+}
+
+ol li {
+    position: relative;
+    margin: 0px;
+    padding: 9px 2px 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+ol li a {
+    display: block;
+    text-indent: -3.3ex;
+    padding: 0px 0px 0px 20px;
+}
+
+li.playing {
+    color: #ee5f5b;
+}
+
+li.playing a {
+    color: #ee5f5b;
+}
+
+li.playing:before {
+    content: '♬';
+    width: 14px;
+    height: 14px;
+    padding: 3px;
+    line-height: 14px;
+    margin: 0px;
+    position: absolute;
+    left: -24px;
+    top: 9px;
+    color: #ee5f5b;
+    font-size: 13px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+#holder
+{
+	position:absolute;
+	width:80%;
+	height:100%;
+}
+#holder img {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
